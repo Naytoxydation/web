@@ -1,0 +1,181 @@
+/* --- Base --- */
+* { box-sizing: border-box; scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  background-color: #0d0d0f;
+  color: #f0f0f0;
+}
+
+/* --- Header --- */
+header {
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.profile-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 3px solid #00aaff;
+}
+
+.header-info h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #00aaff;
+}
+
+.header-info p {
+  color: #aaa;
+  margin-top: 0.3rem;
+}
+
+/* --- Navigation sous photo --- */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  color: #ddd;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #00aaff;
+  color: #111;
+}
+
+/* --- Lang switch --- */
+.lang-switch {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.lang-btn {
+  border: 2px solid #00aaff;
+  background: transparent;
+  color: #00aaff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.lang-btn:hover {
+  background-color: #00aaff;
+  color: #111;
+}
+
+.lang-btn.active {
+  background-color: #00aaff;
+  color: #111;
+}
+
+/* --- Sections --- */
+.section {
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+.section a {
+  color: #00aaff;      /* couleur bleu clair assortie au thème sombre */
+  text-decoration: none; /* supprime le soulignement */
+  transition: color 0.3s;
+}
+
+.section a:hover {
+  color: #66ccff;       /* couleur légèrement différente au survol */
+  text-decoration: underline; /* facultatif, juste au hover */
+}
+
+.section h2 {
+  color: #00aaff;
+  margin-bottom: 2rem;
+}
+
+/* --- Skills --- */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.skill {
+  background: #1a1a1d;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  transition: transform 0.2s, border 0.3s;
+}
+
+.skill:hover {
+  transform: scale(1.05);
+  border-color: #00aaff;
+}
+
+/* --- Projects --- */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.project {
+  background: #1a1a1d;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  border-color: #00aaff;
+}
+
+.project h3 {
+  color: #00aaff;
+  margin-bottom: 0.5rem;
+}
+
+/* --- Footer --- */
+footer {
+  text-align: center;
+  padding: 1rem;       /* réduit l’espace vertical */
+  background: #111;
+  color: #666;
+  font-size: 0.8rem;   /* texte plus petit */
+}
