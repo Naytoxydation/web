@@ -27,15 +27,6 @@ header {
   position: relative;
 }
 
-header::after {
-  content: "";
-  position: absolute;
-  inset: 2.5rem;
-  border: 1px solid rgba(255,255,255,0.03);
-  border-radius: 28px;
-  pointer-events: none;
-}
-
 .header-container {
   background: linear-gradient(135deg, rgba(5,6,7,0.95), rgba(10,12,18,0.9));
   border-radius: 30px;
